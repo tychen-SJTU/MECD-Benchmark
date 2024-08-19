@@ -23,16 +23,13 @@ models = []
 models = [('your_path/VAR-main/feature_kit/models/resnet200_anet_2016_deploy.prototxt',
            'your_path/VAR-main/feature_kit/models/resnet200_anet_2016.caffemodel',
            1.0, 0, True, 224)]
-models.append(('your_path/VAR-main/feature_kit/models/bn_inception_anet_2016_temporal_deploy.prototxt',
-                'your_path/VAR-main/feature_kit/models/bn_inception_anet_2016_temporal.caffemodel.v5',
-                0.2, 1, False, 224))
 
 cls = ActionClassifier(models, dev_id=GPU)
 
 process_list = {}
 counter = 0
 for vid in tqdm(all_vid_list):
-    if os.path.isfile(os.path.join(args.data_path, vid+"_bn.npy")) and os.path.isfile(os.path.join(args.data_path, vid+"_resnet.npy")):
+    if os.path.isfile(os.path.join(args.data_path, vid+"_resnet.npy")):
         counter += 1
         process_list[vid] = counter
     elif vid not in process_list:

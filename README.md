@@ -7,6 +7,11 @@ The annotations of testing set:  `captions/test.json`
 
 The videos can be found in ActivityNet official website https://activity-net.org/ according to our provided video ID.
 
+The pretrainig feature extracted by ResNet200 can be got by following the command below:
+```python
+python feature_kit/extract_feature.py
+```
+And the pretraining weights of VGCM will be unpoladed soon.
 ## 2. Training for VGCM
 For training our VGCM, run 
 ```python 
