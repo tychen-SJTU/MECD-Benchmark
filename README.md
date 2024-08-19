@@ -37,22 +37,22 @@ three representative examples are provided during inference.
 Examples can be found in `mecd_llm_fewshot/prompt.txt`, `mecd_vllm_fewshot/video_chat2/multi_event.py`, 
 and `mecd_vllm_fewshot/Video-LLaVA/videollava/conversation.py`. 
 #### Video-LLaVA
-Please follow the command to evaulate the causal discovery ability of Video-LLaVA.:
+Please follow the command to evaulate the causal discovery ability of Video-LLaVA:
 ```python
 python mecd_vllm_fewshot/Video-LLaVA/videollava/eval/video/run_inference_causal_inference_complete.py
 ```
 #### Videochat2
-Similarly, please follow the command to evaulate the causal discovery ability of Videochat2.:
+Similarly, please follow the command to evaulate the causal discovery ability of Videochat2:
 ```python
 python mecd_vllm_fewshot/video_chat2/multi_event.py
 ```
 #### GPT-4
-Similarly, please follow the command to evaulate the causal discovery ability of GPT-4.:
+Similarly, please follow the command to evaulate the causal discovery ability of GPT-4:
 ```python
 python mecd_llm_fewshot/gpt4.py
 ```
 #### Gemini-pro
-Similarly, please follow the command to evaulate the causal discovery ability of Gemini-pro.:
+Similarly, please follow the command to evaulate the causal discovery ability of Gemini-pro:
 ```python
 python mecd_llm_fewshot/gemini.py
 ```
