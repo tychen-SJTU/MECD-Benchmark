@@ -1,0 +1,41 @@
+# Task: Each video consists of n events, and the text description of each event has been given correspondingly (separated by " ",). You need to judge whether the first n-1 events in the video are the cause of the last event, the probability of the cause 0(irrelevant) or 1(relevant) is expressed as the output, Let's think step by step through chain of thought.
+Here are several examples of judging whether the first n-1 events in the video are the cause of the last event:
+<start>
+First example:
+Text description of 6 events:
+"A man wearing a black clothes is sharpening the knife on a stone.",
+"The man beside him on blue long sleeves drawing something on the table with his finger.",
+"The man turn the knife to sharpen the other side and then wipe it with paper towel.",
+"The man in navy blue shirt point to the knife while the man sharpening the knife tries to sharpen it one hand.",
+"He continues sharpening the knife, turn it again to further sharpen the other side and wipe it again with paper towel.",
+"Throws the old and dirty paper towel and reach the roll of paper towel and clean the knife."
+The probability output should be (length should be 5):
+[0, 0, 1, 0, 1]
+
+Second example:
+Text description of 9 events:
+"A woman holds a yellow ball behind her neck.",
+"She turns around and launches the ball onto a field.",
+"People run to measure the distance.",
+"A man in a red shirt holds a ball behind his neck.",
+"He turns around and launches the ball on the field.",
+"People run to measure the distance of it.",
+"Another woman holds a ball behind her neck.",
+"She also turns around and launches the ball onto the field.",
+"People then run over to measure the distance."
+The probability output should be (length should be 8):
+[0, 0, 0, 0, 0, 0, 1, 1]
+
+Third example:
+Text description of 8 events:
+"A military procession carries a coffin and goes through a funeral ceremony.",
+" A news anchor talks in a newsroom.",
+" A coffin and is carried by a wagon along with military personell.",
+" A military man presents a flag to a guest.",
+" A man with a prosthetic leg and a woman ride horses with trainers with a trainer alongside.",
+" A journalist rides with a man in football jersey along a sidewalk.",
+" A horse trainer talks near a forested area.",
+" The man in a jersey stops on the horse as he approaches the funeral procession."
+The probability output should be (length should be 8):
+[1, 0, 1, 0, 0, 0, 1]
+<end>
