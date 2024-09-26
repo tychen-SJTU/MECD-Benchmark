@@ -27,6 +27,7 @@ To reproduce our results in the above table, please follow the default hyperpara
 ## 3. Finetuning Video-LLaVA and VideoChat2 on MECD
 We fine-tune the vision-language projector of Video-LLaVA and VideoChat2 using LoRA under its official implementation on our entire MECD training set. 
 Please follow the command to reproduce thr fine-tuning result on our MECD benchmark:
+
 Video-LLaVA
 ```bash
 cd mecd_vllm_finetune/Video-LLaVA-ft
