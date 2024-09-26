@@ -35,7 +35,7 @@ sh scripts/v1_5/finetune_lora.sh
 VideoChat2
 ```bash
 cd mecd_vllm_fewshot/VideoChat2-ft
-OMP_NUM_THREADS=2 torchrun --nnodes=1 --nproc_per_node=8 tasks/train_it.py /home/tychen/video_chat2/scripts/videochat_mistral/config_7b_stage3.py
+OMP_NUM_THREADS=2 torchrun --nnodes=1 --nproc_per_node=8 tasks/train_it.py ./scripts/videochat_mistral/config_7b_stage3.py
 ```
 ## 4. Few-shot Evaluation of LLMs &VLLMs
 All LLM-based and VLLM-based models are evaluated under a few-shot setting (In-Context Learning). 
