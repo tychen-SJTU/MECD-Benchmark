@@ -1,3 +1,4 @@
+## Our paper was accepted in NeurIPS 2024 as a Spotlight Paper!-2024.9.26
 ## 1. Dataset MECD
 Our MECD dataset includes 808 and 299 videos for training set and testing set, respectively.
 
