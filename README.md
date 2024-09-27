@@ -78,7 +78,8 @@ python gemini.py
 First, you will need to set up the environment and extract pretraining weight of each video.
 We offer an environment suitable for both VGCM and all VLLMs:
 ```bash
-conda create -n pllava python=3.10
+conda create -n mecd python=3.10
+conda activate mecd
 pip install -r requirements.txt
 ```
 The pre-training weight of VGCM will be uploaded soon.
