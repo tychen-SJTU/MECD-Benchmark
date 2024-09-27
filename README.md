@@ -1,5 +1,5 @@
 ## 2024.9.26 Our paper is accepted in NeurIPS 2024 as a Spotlight Paper!
-[MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning](https://arxiv.org/pdf/2409.17647)
+MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning [paper](https://arxiv.org/pdf/2409.17647)
 ## 1. Our MECD Dataset
 Our MECD dataset includes 808 and 299 videos for training set and testing set, respectively.
 
