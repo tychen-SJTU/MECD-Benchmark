@@ -47,8 +47,7 @@ python multi_event.py
 ## 4. Few-shot (In-Context Learning) Evaluation of LLMs &VLLMs
 All LLM-based and VLLM-based models are evaluated under a few-shot setting (In-Context Learning). 
 Specifically, following the approach in causal discovery for NLP tasks and after proving the sufficiency, 
-three representative examples are provided during inference. 
-These In-Context Learning examples can be found in `mecd_llm_fewshot/prompt.txt`, `mecd_vllm_fewshot/video_chat2/multi_event.py`, 
+three representative examples are provided during inference, which can be found in `mecd_llm_fewshot/prompt.txt`, `mecd_vllm_fewshot/video_chat2/multi_event.py`, 
 and `mecd_vllm_fewshot/Video-LLaVA/videollava/conversation.py`. 
 #### Video-LLaVA
 Please follow the command to evaluate the In-Context causal discovery ability of Video-LLaVA:
