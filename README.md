@@ -94,10 +94,7 @@ The pre-training weight of VGCM will be uploaded soon.
 
 ### 7. Acknowledgement
 We would also like to recognize and commend the following open source projects, thank you for your great contribution to the open source community:
-[VAR](https://github.com/leonnnop/VAR)
 
-[Video-LLaVA](https://github.com/PKU-YuanGroup/Video-LLaVA)
-
-[VideoChat2](https://github.com/OpenGVLab/Ask-Anything)
+[VAR](https://github.com/leonnnop/VAR), [Video-LLaVA](https://github.com/PKU-YuanGroup/Video-LLaVA), [VideoChat2](https://github.com/OpenGVLab/Ask-Anything)
 
 We would like to express our sincere gratitude to the PCs, SACs, ACs, as well as Reviewers 17Ce, 2Vef, eXFX, and 9my4, for their constructive feedback and support provided during the review process of NeurIPS 2024. Their insightful comments have been instrumental in enhancing the quality of our work.
