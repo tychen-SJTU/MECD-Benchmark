@@ -71,4 +71,31 @@ cd mecd_llm_fewshot
 python gemini.py
 ```
 
+## 5. Install
+First, you will need to set up the environment and extract pretraining weight of each video.
+We offer an environment suitable for both VGCM and all VLLMs:
+```bash
+conda create -n pllava python=3.10
+pip install -r requirements.txt
+```
+The pre-training weight of VGCM will be uploaded soon.
 
+## 6. Citation
+```bash
+@misc{chen2024mecd,
+      title={MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning}, 
+      author={Tieyuan Chen and Huabin Liu and Tianyao He and Yihang Chen and Chaofan Gan and Xiao Ma and Cheng Zhong and Yang Zhang and Yingxue Wang and Hui Lin and Weiyao Lin},
+      year={2024},
+      eprint={2409.17647},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
+### 7. Acknowledgement
+We would also like to recognize and commend the following open source projects, thank you for your great contribution to the open source community:
+[VAR](https://github.com/leonnnop/VAR)
+[Video-LLaVA](https://github.com/PKU-YuanGroup/Video-LLaVA)
+[VideoChat2](https://github.com/OpenGVLab/Ask-Anything)
+
+We would like to express our sincere gratitude to the PCs, SACs, ACs, as well as Reviewers 17Ce, 2Vef, eXFX, and 9my4, for their constructive feedback and support provided during the review process of NeurIPS 2024. Their insightful comments have been instrumental in enhancing the quality of our work.
