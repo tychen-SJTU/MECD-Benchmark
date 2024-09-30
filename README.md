@@ -86,13 +86,11 @@ The pre-training weight of VGCM will be uploaded soon.
 
 ## 6. Citation
 ```bash
-@misc{chen2024mecd,
-      title={MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning}, 
-      author={Tieyuan Chen and Huabin Liu and Tianyao He and Yihang Chen and Chaofan Gan and Xiao Ma and Cheng Zhong and Yang Zhang and Yingxue Wang and Hui Lin and Weiyao Lin},
-      year={2024},
-      eprint={2409.17647},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{chen2024mecd,
+  title={MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning},
+  author={Chen, Tieyuan and Liu, Huabin and He, Tianyao and Chen, Yihang and Gan, Chaofan and Ma, Xiao and Zhong, Cheng and Zhang, Yang and Wang, Yingxue and Lin, Hui and others},
+  journal={arXiv preprint arXiv:2409.17647},
+  year={2024}
 }
 ```
 
