@@ -1,5 +1,5 @@
 ## MECD NeurIPS 2024 (Spotlight)
-<h5 align="center">  MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning </h2>
+<h2 align="center"> <a href="https://arxiv.org/abs/2409.17647">MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning</a></h2>
 
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
 
