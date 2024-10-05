@@ -1,6 +1,6 @@
 <h2 align="center"> <a href="https://arxiv.org/abs/2409.17647">MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning</a></h2>
 
-<h5 align="center"> NeurIPS 2024 (Spotlight)  </h2>
+<h5 align="center"> NeurIPS 2024 (**Spotlight**)  </h2>
 
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
 
@@ -11,7 +11,7 @@
 ![Image 1](main_mecd.png)
 
 ## 📰 News
-[2024.9.26] 🔥🔥🔥 Our MECD is accepted in NeurIPS 2024 as a Spotlight Paper!
+[2024.9.26] 🔥🔥🔥 Our MECD is accepted in NeurIPS 2024 as a **Spotlight** Paper!
 
 ## 📊 MECD Dataset
 Our MECD dataset includes 808 and 299 videos for training set and testing set, respectively.
