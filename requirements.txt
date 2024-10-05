@@ -39,7 +39,7 @@ colorlog==6.8.2
 contourpy==1.2.0
 crcmod==1.7
 cryptacular==1.6.2
-cryptography==42.0.5
+cryptography==43.0.1
 cycler==0.12.1
 dacite==1.7.0
 datasets==2.14.7
