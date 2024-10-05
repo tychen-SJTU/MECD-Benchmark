@@ -84,7 +84,7 @@ cd mecd_llm_fewshot
 python gemini.py
 ```
 
-## 5. Install
+## 🛠️ Requirements and Installation
 First, you will need to set up the environment and extract pretraining weight of each video.
 We offer an environment suitable for both VGCM and all VLLMs:
 ```bash
@@ -94,7 +94,7 @@ pip install -r requirements.txt
 ```
 The pre-training weight of VGCM will be uploaded soon.
 
-## 6. Citation
+## ✏️ Citation
 ```bash
 @article{chen2024mecd,
   title={MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning},
@@ -104,7 +104,7 @@ The pre-training weight of VGCM will be uploaded soon.
 }
 ```
 
-### 7. Acknowledgement
+### 👍 Acknowledgement
 We would also like to recognize and commend the following open source projects, thank you for your great contribution to the open source community:
 
 
