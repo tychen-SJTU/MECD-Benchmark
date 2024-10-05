@@ -1,6 +1,8 @@
 ## 2024.9.26 Our paper is accepted in NeurIPS 2024 as a Spotlight Paper!
 MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning
 
+<h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
+
 [![arXiv](https://img.shields.io/badge/Arxiv-2409.17647-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.17647) <br>
 
 ![Image 1](main_mecd.png)
