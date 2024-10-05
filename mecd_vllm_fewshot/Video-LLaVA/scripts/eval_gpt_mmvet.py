@@ -18,8 +18,8 @@ parser.add_argument('--result_path')
 args = parser.parse_args()
 
 
-openai.api_base = "https://api.aiguoguo199.com/v1"
-openai.api_key = 'sk-eionFWpNThMNy4eeFdC25789F60a4cC2A66b2c94D3948bA6'
+openai.api_base = ""
+openai.api_key = ''
 
 gpt_model = "gpt-3.5-turbo"
 
