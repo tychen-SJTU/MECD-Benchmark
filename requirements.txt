@@ -28,7 +28,7 @@ blessings==1.7
 boto3==1.34.63
 botocore==1.34.63
 cachetools==5.3.3
-certifi==2024.2.2
+certifi==2024.7.4
 cffi==1.16.0
 click==8.1.7
 cmaes==0.11.1
