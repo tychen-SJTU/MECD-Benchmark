@@ -28,7 +28,7 @@ python feature_kit/extract_feature.py
 ```
 And the pretraining weights of VGCM will be unpoladed soon.
 ## 🗝️ Training & Validating 
-For training and our validating VGCM(Video Granger Causality Model), please follow the command:
+For training and our validating VGCM(Video Granger Causality Model), please follow the command below:
 ```bash 
 sh scripts/train.sh 
 ```
