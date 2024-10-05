@@ -32,7 +32,7 @@ For training and our validating VGCM(Video Granger Causality Model), please foll
 ```bash 
 sh scripts/train.sh 
 ```
-#### Benchmark Results 
+#### 🚀 Benchmark Results 
 ![Image 1](main.png)
 
 #### Hyperparameters settings
