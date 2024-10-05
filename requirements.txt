@@ -94,7 +94,7 @@ humanize==4.9.0
 hupper==1.12.1
 Hypercorn==0.16.0
 hyperframe==6.0.1
-idna==3.6
+idna==3.7
 idscheck==2.3.0
 imageio==2.27.0
 imageio-ffmpeg==0.4.9
