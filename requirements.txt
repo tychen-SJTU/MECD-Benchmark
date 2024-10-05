@@ -203,7 +203,7 @@ pydantic==2.4.2
 pydantic_core==2.10.1
 pydub==0.25.1
 Pygments==2.17.2
-pymongo==4.6.2
+pymongo==4.6.3
 pynvml==11.5.0
 pyparsing==3.1.2
 pyppmd==1.0.0
