@@ -305,7 +305,7 @@ xxhash==3.5.0
 yacs==0.1.8
 yapf==0.40.2
 yarl==1.9.4
-zipp==3.18.1
+zipp==3.19.1
 zope.deprecation==5.0
 zope.interface==6.2
 zope.sqlalchemy==3.1
