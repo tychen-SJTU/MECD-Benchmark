@@ -284,7 +284,7 @@ tyro==0.8.10
 tzdata==2024.1
 tzlocal==5.2
 universal-analytics-python3==1.1.1
-urllib3==1.26.18
+urllib3==1.26.19
 uvicorn==0.22.0
 velruse==1.1.1
 venusian==3.1.0
