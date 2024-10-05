@@ -19,7 +19,7 @@ def parse_args():
     args = parser.parse_args(['--pred_path', 'eval/GPT_Zero_Shot_QA/Activitynet_Zero_Shot_QA/Video-LLaVA-7B/1_1.json',
                               '--output_dir', 'eval/GPT_Zero_Shot_QA/Activitynet_Zero_Shot_QA/Video-LLaVA-7B/gpt3-0.25',
                               '--output_json', 'eval/GPT_Zero_Shot_QA/Activitynet_Zero_Shot_QA/Video-LLaVA-7B/gpt3-0.25/results.json',
-                              '--api_key', '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',
+                              '--api_key', '',
                               '--api_base', '',
                               '--num_tasks', '8'
                             ])
