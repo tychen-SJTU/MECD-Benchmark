@@ -35,7 +35,7 @@ sh scripts/train.sh
 #### 🚀 Benchmark Results 
 ![Image 1](main.png)
 
-#### Hyperparameters settings
+#### 📃 Hyperparameters settings
 To reproduce our results in the above table, please follow the default hyperparameters settings in: `src/runner.py` and `scripts/train.sh`
 
 ## 🔥 Fine-tuning & Evaluation of VLLMs
