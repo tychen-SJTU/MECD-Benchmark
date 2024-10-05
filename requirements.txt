@@ -210,7 +210,7 @@ pyppmd==1.0.0
 pyramid==2.0.2
 pyramid-mailer==0.15.1
 python-dateutil==2.9.0.post0
-python-multipart==0.0.6
+python-multipart==0.0.7
 python3-openid==3.2.0
 pytorchvideo==0.1.5
 pytz==2023.4
