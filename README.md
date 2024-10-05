@@ -5,6 +5,8 @@ MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning
 
 [![arXiv](https://img.shields.io/badge/Arxiv-2409.17647-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.17647) <br>
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mecd-unlocking-multi-event-causal-discovery/causal-discovery-in-video-reasoning-on-mecd)](https://paperswithcode.com/sota/causal-discovery-in-video-reasoning-on-mecd?p=mecd-unlocking-multi-event-causal-discovery)
+
 ![Image 1](main_mecd.png)
 
 ## 1. Our MECD Dataset
