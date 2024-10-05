@@ -13,7 +13,7 @@
 ## 📰 News
 [2024.9.26] 🔥🔥🔥 Our MECD is accepted in NeurIPS 2024 as a Spotlight Paper!
 
-## 💫 MECD Dataset
+## 📊 MECD Dataset
 Our MECD dataset includes 808 and 299 videos for training set and testing set, respectively.
 
 The annotations of training set: `captions/train.json` 
@@ -38,7 +38,7 @@ sh scripts/train.sh
 #### Hyperparameters settings
 To reproduce our results in the above table, please follow the default hyperparameters settings in: `src/runner.py` and `scripts/train.sh`
 
-## 3. Fine-tuning & Evaluation of VLLMs
+## 🔥 Fine-tuning & Evaluation of VLLMs
 We fine-tune the vision-language projector of Video-LLaVA and VideoChat2 using LoRA under its official implementation on our entire MECD training set. 
 Please follow the command to reproduce thr fine-tuning result on our MECD benchmark:
 
@@ -54,7 +54,7 @@ cd mecd_vllm_fewshot/VideoChat2-ft
 OMP_NUM_THREADS=2 torchrun --nnodes=1 --nproc_per_node=8 tasks/train_it.py ./scripts/videochat_mistral/config_7b_stage3.py
 python multi_event.py
 ```
-## 4. Few-shot (In-Context Learning) Evaluation of LLMs &VLLMs
+## ❄️ Few-shot (In-Context Learning) Evaluation of LLMs &VLLMs
 All LLM-based and VLLM-based models are evaluated under a few-shot setting (In-Context Learning). 
 Specifically, following the approach in causal discovery for NLP tasks and after proving the sufficiency, 
 three representative examples are provided during inference, which can be found in `mecd_llm_fewshot/prompt.txt`, `mecd_vllm_fewshot/video_chat2/multi_event.py`, 
