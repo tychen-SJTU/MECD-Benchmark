@@ -272,7 +272,7 @@ toolz==0.12.1
 torch==2.2.0
 torchaudio==2.0.2
 torchvision==0.15.2
-tqdm==4.65.0
+tqdm==4.66.3
 transaction==4.0
 transformers==4.38.0
 translationstring==1.4
