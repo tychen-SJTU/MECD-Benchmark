@@ -111,3 +111,8 @@ We would also like to recognize and commend the following open source projects, 
 [VAR](https://github.com/leonnnop/VAR), [Video-LLaVA](https://github.com/PKU-YuanGroup/Video-LLaVA), [VideoChat2](https://github.com/OpenGVLab/Ask-Anything)
 
 We would like to express our sincere gratitude to the PCs, SACs, ACs, as well as Reviewers 17Ce, 2Vef, eXFX, and 9my4, for their constructive feedback and support provided during the review process of NeurIPS 2024. Their insightful comments have been instrumental in enhancing the quality of our work.
+
+
+### ⏳ Ongoing
+We will continue to update the performance of new state-of-the-art (SOTA) models on the MECD dataset, 
+such as VideoLLaMA 2, PLLaVA, OpenAI-o1, etc., and we will also continuously expand the volume of data and video sources in MECD.
