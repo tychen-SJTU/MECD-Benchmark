@@ -43,7 +43,6 @@ The pretraining feature extracted by ResNet200 can be got by following the comma
 ```bash
 python feature_kit/extract_feature.py
 ```
-And the pretraining weights of VGCM will be unpoladed soon.
 ## 🗝️ Training & Validating 
 For training and our validating VGCM(Video Granger Causality Model), please follow the command below:
 ```bash 
