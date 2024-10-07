@@ -54,7 +54,7 @@ sh scripts/train.sh
 ```
 #### 🚀 Benchmark Results 
 
-<img src="main.png" alt="Image" style="width:80%;">
+<img src="main.png" alt="Image" style="width:50%;">
 
 #### 📃 Hyperparameters settings
 To reproduce our results in the above table, please follow the default hyperparameters settings in: `src/runner.py` and `scripts/train.sh`
