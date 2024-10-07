@@ -13,6 +13,28 @@
 ## 📰 News
 [2024.9.26] 🔥🔥🔥 Our MECD is accepted in NeurIPS 2024 as a **Spotlight** Paper!
 
+
+## 🏠 Overview
+
+Video causal reasoning aims to achieve a high-level understanding of video content from a causal perspective. 
+However, current video reasoning tasks are limited in scope, primarily executed in a question-answering paradigm 
+and focusing on short videos containing only a single event and simple causal relations, 
+lacking comprehensive and structured causality analysis for videos with multiple events. 
+To fill this gap, we introduce a new task and dataset, Multi-Event Causal Discovery (MECD). 
+It aims to uncover the causal relationships between events distributed chronologically across long videos. 
+Given visual segments and textual descriptions of events, 
+MECD requires identifying the causal associations between these events to derive a comprehensive, 
+structured event-level video causal diagram explaining why and how the final result event occurred. 
+To address MECD, we devise a novel framework inspired by the Granger Causality method, 
+using an efficient mask-based event prediction model to perform an Event Granger Test, 
+which estimates causality by comparing the predicted result event when premise events are masked versus unmasked. 
+Furthermore, we integrate causal inference techniques such as front-door adjustment and 
+counterfactual inference to address challenges in MECD like causality confounding and illusory causality. 
+Experiments validate the effectiveness of our framework in providing causal relationships in multi-event videos, 
+outperforming GPT-4o and VideoLLaVA by 5.7% and 4.1%, respectively.
+
+![Image 1](task.pdf)
+
 ## 📊 MECD Dataset
 Our MECD dataset includes 808 and 299 videos for training set and testing set, respectively.
 
@@ -92,7 +114,7 @@ conda create -n mecd python=3.10
 conda activate mecd
 pip install -r requirements.txt
 ```
-The pre-training weight of VGCM will be uploaded soon.
+The pre-training weight of VGCM is available in [Google Drive](https://drive.google.com/file/d/1FScQim-nPgpr-SYRPIzVd5Dg6YYJbwQ1/view?usp=sharing).
 
 ## ✏️ Citation
 ```bash
