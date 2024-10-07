@@ -28,6 +28,7 @@ which estimates causality by comparing the predicted result event when premise e
 Furthermore, we integrate causal inference techniques such as front-door adjustment and 
 counterfactual inference to address challenges in MECD like causality confounding and illusory causality.
 
+An example of causality diagram:
 ![Image 2](example.png)
 
 ## 📊 MECD Dataset
