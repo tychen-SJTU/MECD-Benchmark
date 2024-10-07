@@ -29,7 +29,7 @@ Furthermore, we integrate causal inference techniques such as front-door adjustm
 counterfactual inference to address challenges in MECD like causality confounding and illusory causality.
 
 An example of causality diagram:
-![Image 2](example.png)
+![Image 2](example1.png)
 
 ## 📊 MECD Dataset
 Our MECD dataset includes 808 and 299 videos for training set and testing set, respectively.
