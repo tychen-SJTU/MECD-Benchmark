@@ -8,7 +8,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mecd-unlocking-multi-event-causal-discovery/causal-discovery-in-video-reasoning-on-mecd)](https://paperswithcode.com/sota/causal-discovery-in-video-reasoning-on-mecd?p=mecd-unlocking-multi-event-causal-discovery)
 
-![Image 1](main_mecd.png)
+<img src="main_mecd.png" alt="Image" style="width:80%;">
 
 ## 📰 News
 [2024.9.26] 🔥🔥🔥 Our MECD is accepted in NeurIPS 2024 as a **Spotlight** Paper!
@@ -53,7 +53,8 @@ For training and our validating VGCM(Video Granger Causality Model), please foll
 sh scripts/train.sh 
 ```
 #### 🚀 Benchmark Results 
-![Image 4](main.png)
+
+<img src="main.png" alt="Image" style="width:80%;">
 
 #### 📃 Hyperparameters settings
 To reproduce our results in the above table, please follow the default hyperparameters settings in: `src/runner.py` and `scripts/train.sh`
