@@ -35,7 +35,7 @@ An example of causality diagram:
 ## 📊 MECD Dataset
 Our MECD dataset includes 808 and 299 videos for training set and testing set, respectively.
 
-<img src="dataset3.png" alt="Image" style="width:80%;">
+<img src="dataset3.png" alt="Image" style="width:95%;">
 
 The annotations of training set: `captions/train.json` 
 
