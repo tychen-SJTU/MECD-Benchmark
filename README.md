@@ -31,6 +31,8 @@ counterfactual inference to address challenges in MECD like causality confoundin
 ## 📊 MECD Dataset
 Our MECD dataset includes 808 and 299 videos for training set and testing set, respectively.
 
+![Image 2](dataset3.png)
+
 The annotations of training set: `captions/train.json` 
 
 The annotations of testing set:  `captions/test.json` 
@@ -48,7 +50,7 @@ For training and our validating VGCM(Video Granger Causality Model), please foll
 sh scripts/train.sh 
 ```
 #### 🚀 Benchmark Results 
-![Image 1](main.png)
+![Image 3](main.png)
 
 #### 📃 Hyperparameters settings
 To reproduce our results in the above table, please follow the default hyperparameters settings in: `src/runner.py` and `scripts/train.sh`
