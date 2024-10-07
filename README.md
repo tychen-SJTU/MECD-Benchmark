@@ -28,10 +28,12 @@ which estimates causality by comparing the predicted result event when premise e
 Furthermore, we integrate causal inference techniques such as front-door adjustment and 
 counterfactual inference to address challenges in MECD like causality confounding and illusory causality.
 
+![Image 2](example.png)
+
 ## 📊 MECD Dataset
 Our MECD dataset includes 808 and 299 videos for training set and testing set, respectively.
 
-![Image 2](dataset3.png)
+![Image 3](dataset3.png)
 
 The annotations of training set: `captions/train.json` 
 
@@ -49,7 +51,7 @@ For training and our validating VGCM(Video Granger Causality Model), please foll
 sh scripts/train.sh 
 ```
 #### 🚀 Benchmark Results 
-![Image 3](main.png)
+![Image 4](main.png)
 
 #### 📃 Hyperparameters settings
 To reproduce our results in the above table, please follow the default hyperparameters settings in: `src/runner.py` and `scripts/train.sh`
