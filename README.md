@@ -61,13 +61,13 @@ To reproduce our results in the above table, please follow the default hyperpara
 We fine-tune the vision-language projector of Video-LLaVA and VideoChat2 using LoRA under its official implementation on our entire MECD training set. 
 Please follow the command to reproduce thr fine-tuning result on our MECD benchmark:
 
-evaluate the causal discovery ability after fine-tuning of Video-LLaVA:
+Evaluate the causal discovery ability after fine-tuning of Video-LLaVA:
 ```bash
 cd mecd_vllm_finetune/Video-LLaVA-ft
 sh scripts/v1_5/finetune_lora.sh 
 python videollava/eval/video/run_inference_causal_inference.py
 ```
-evaluate the causal discovery ability after fine-tuning of VideoChat2:
+Evaluate the causal discovery ability after fine-tuning of VideoChat2:
 ```bash
 cd mecd_vllm_fewshot/VideoChat2-ft
 OMP_NUM_THREADS=2 torchrun --nnodes=1 --nproc_per_node=8 tasks/train_it.py ./scripts/videochat_mistral/config_7b_stage3.py
