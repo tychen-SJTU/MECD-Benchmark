@@ -33,7 +33,7 @@ An example of causality diagram:
 <img src="example.png" alt="Image" style="width:80%;">
 
 ## 📊 MECD Dataset
-Our MECD dataset includes 808 and 299 videos for training set and testing set, respectively.
+Our MECD dataset includes 806 and 299 videos for training set and testing set, respectively.
 
 <img src="dataset3.png" alt="Image" style="width:95%;">
 
@@ -61,6 +61,7 @@ To reproduce our results in the above table, please follow the default hyperpara
 
 ## 🔥 Fine-tuning & Evaluation of VLLMs
 We fine-tune the vision-language projector of 🦙Video-LLaVA and 🦜VideoChat2 using LoRA under its official implementation on our entire MECD training set. 
+During the fine-tuning phase, the relation is transformed into a list of length (n-1), and the regular pattern of causality representation offered by the conversation is supplied to the VLLM.
 Please follow the command to reproduce thr fine-tuning result on our MECD benchmark:
 
 Evaluate the causal discovery ability after fine-tuning of 🦙Video-LLaVA:
@@ -117,14 +118,14 @@ The pre-training weight of VGCM is available in [Google Drive](https://drive.goo
 
 ## ✏️ Citation
 ```bash
-@article{chen2024mecd,
-  title={MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning},
+@inproceedings{
+  chen2024mecd,
+  title={{MECD}: Unlocking Multi-Event Causal Discovery in Video Reasoning},
   author={Chen, Tieyuan and Liu, Huabin and He, Tianyao and Chen, Yihang and Gan, Chaofan and Ma, Xiao and Zhong, Cheng and Zhang, Yang and Wang, Yingxue and Lin, Hui and others},
-  journal={arXiv preprint arXiv:2409.17647},
+  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
   year={2024}
 }
 ```
-
 ### 👍 Acknowledgement
 We would also like to recognize and commend the following open source projects, thank you for your great contribution to the open source community:
 
