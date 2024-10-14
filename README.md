@@ -43,7 +43,7 @@ The annotations of testing set:  `captions/test.json`
 
 The videos can be found in ActivityNet official website https://activity-net.org/ according to our provided video ID.
 
-The pretraining feature extracted by ResNet200 can be got by following the command below:
+The pretraining feature extracted by ResNet200 can be got by following the command below (details can be found in [VAR](https://github.com/leonnnop/VAR)) :
 ```bash
 python feature_kit/extract_feature.py
 ```
@@ -62,6 +62,13 @@ To reproduce our results in the above table, please follow the default hyperpara
 ## 🔥 Fine-tuning & Evaluation of VLLMs
 We fine-tune the vision-language projector of 🦙Video-LLaVA and 🦜VideoChat2 using LoRA under its official implementation on our entire MECD training set. 
 During the fine-tuning phase, the relation is transformed into a list of length (n-1), and the regular pattern of causality representation offered by the conversation is supplied to the VLLM.
+Task prompt can be found in (`mecd_vllm_finetune/Video-LLaVA-ft/videollava/conversation.py` and `mecd_vllm_finetune/VideoChat2-ft/multi_event.py`) :
+```bash
+system = "Task: The video consists of n events, 
+and the text description of each event has been given correspondingly(separated by " ",). 
+You need to judge whether the former events in the video are the cause of the last event or not, 
+the probability of the cause 0(non-causal) or 1(causal) is expressed as the output, "
+```
 Please follow the command to reproduce thr fine-tuning result on our MECD benchmark:
 
 Evaluate the causal discovery ability after fine-tuning of 🦙Video-LLaVA:
