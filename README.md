@@ -41,6 +41,9 @@ The annotations of training set: `captions/train.json`
 
 The annotations of testing set:  `captions/test.json` 
 
+Full causal relation diagram annotations can be found at `captions/val_mecd_complete.json`, additional attribute 'all_relation'
+is introduced to conduct complete causal graph reasoning which is evaluated by 'Average_Structural_Hamming_Distance'.
+
 The videos can be found in ActivityNet official website https://activity-net.org/ according to our provided video ID.
 
 The pretraining feature extracted by ResNet200 can be got by following the command below (details can be found in [VAR](https://github.com/leonnnop/VAR)) :
