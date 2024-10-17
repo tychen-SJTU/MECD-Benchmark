@@ -311,8 +311,8 @@ def get_args():
     parser.add_argument('--multi_chains_b', type=int, default=1, help='multi chains max(1, (num_sen+b) // k)')
     parser.add_argument('--multi_chains_k', type=int, default=3, help='multi chains max(1, (num_sen+b) // k)')
     parser.add_argument('--validation_set', type=str,
-                        default='./captions/val.json',
-                        help='validation_set')
+                        default='./captions/val_mecd_complete.json',
+                        help='If not None, conducting complete causal graph reasoning.')
     # * post process and compatibility check
     opt = parser.parse_args()
     opt.local_rank = int(os.environ.get('LOCAL_RANK', 0))

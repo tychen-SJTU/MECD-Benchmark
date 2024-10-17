@@ -117,8 +117,8 @@ class MECDDataset(Dataset):
         assert mode in ['train', 'val', 'test']
         logging.info("Mode {}".format(mode))
         data_path = os.path.join(self.data_dir, self.dset_name, "{}{}".format(mode, self.json_path))
-        if mode == 'val':
-            data_path = "./captions/val.json"
+        if mode == 'val' and self.validation_set is not None:
+            data_path = self.validation_set
             # during zero - causal relation test modified when 0set
         '''
         load data
