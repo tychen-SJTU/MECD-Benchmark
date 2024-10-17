@@ -1,6 +1,6 @@
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 import sys
 sys.path.append("your_path/Video-LLaVA")
 import math
@@ -232,7 +232,7 @@ def run_inference(args):
         relation = {"name": key, "gt": answer, "pred": output}
         result.append(relation)
 
-    with open('your_path/Video-LLaVA/video_llava_complete2.json', 'w') as f:
+    with open('your_path/Video-LLaVA/videollava_in_context_relation_complete.json', 'w') as f:
         json.dump(result, f, indent=4)
 
 

@@ -19,7 +19,7 @@ log_format = "%(asctime)-10s: %(message)s"
 logging.basicConfig(level=logging.INFO, format=log_format)
 
 
-class VARDataset(Dataset):
+class MECDDataset(Dataset):
     PAD_TOKEN = "[PAD]"  # padding of the whole sequence, note
     CLS_TOKEN = "[CLS]"  # leading token of the joint sequence
     SEP_TOKEN = "[SEP]"  # a separator for video and text
@@ -90,8 +90,7 @@ class VARDataset(Dataset):
             word2idx_path = os.path.join(data_dir, 'vocab_feature', 'word2idx.json')
         self.word2idx = load_json(word2idx_path)
         self.idx2word = {int(v): k for k, v in self.word2idx.items()}
-        self.video_feature_dir = os.path.join('your_path/MECD/VAR-main/feature_kit/video_feature_train')
-        self.duration_file = os.path.join(meta_dir, 'var_video_duration_v1.0.csv')
+        self.video_feature_dir = os.path.join('/feature_kit/video_feature_train')
         # self.frame_to_second = self._load_duration()
 
         self.max_seq_len = max_v_len + max_t_len
@@ -119,7 +118,7 @@ class VARDataset(Dataset):
         logging.info("Mode {}".format(mode))
         data_path = os.path.join(self.data_dir, self.dset_name, "{}{}".format(mode, self.json_path))
         if mode == 'val':
-            data_path = "your_path/MECD/VAR-main/captions/complete_graph/val_mecd_complete.json"
+            data_path = "./captions/val.json"
             # during zero - causal relation test modified when 0set
         '''
         load data
@@ -208,7 +207,7 @@ class VARDataset(Dataset):
         if os.path.exists(os.path.join(self.video_feature_dir, "{}_resnet.npy".format(example_name[2:]))):
             feat_path_resnet = os.path.join(self.video_feature_dir, "{}_resnet.npy".format(example_name[2:]))
         else:
-            feat_path_resnet = os.path.join("your_path/MECD/VAR-main/feature_kit/video_feature_val",
+            feat_path_resnet = os.path.join("./feature_kit/video_feature_val",
                                             "{}_resnet.npy".format(example_name[2:]))
 
         video_feature = np.load(feat_path_resnet)
@@ -740,7 +739,7 @@ def cal_performance(pred, gold):
     gold = gold[:, -pred.shape[1]:]
     pred = pred.max(2)[1].contiguous().view(-1)
     gold = gold.contiguous().view(-1)
-    valid_label_mask = gold.ne(VARDataset.IGNORE)
+    valid_label_mask = gold.ne(MECDDataset.IGNORE)
     pred_correct_mask = pred.eq(gold)
     n_correct = pred_correct_mask.masked_select(valid_label_mask).sum()
 

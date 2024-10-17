@@ -11,7 +11,7 @@ from torch.utils.data import DataLoader
 
 from src.model import get_model
 from src.model.utils.optimization import BertAdam, EMA
-from src.dataloader.var_dataset import VARDataset, sentences_collate
+from src.dataloader.mecd_dataset import MECDDataset, sentences_collate
 from src.engine.train import train_epoch
 from src.engine.valid import eval_epoch
 from src.utils import save_parsed_args_to_json, is_distributed, init_seed, create_save_dir, dist_log
@@ -196,10 +196,10 @@ def get_args():
     parser = argparse.ArgumentParser()
 
     # * basic settings
-    parser.add_argument('--dset_name', type=str, default='activitynet', choices=['VAR', 'activitynet', 'TVC'],
+    parser.add_argument('--dset_name', type=str, default='activitynet',
                         help='Name of the dataset, will affect data loader, evaluation, etc')
     parser.add_argument('--model_name', type=str, default='')
-    parser.add_argument('--data_dir', type=str, default='your_path/MECD/VAR-main/captions',
+    parser.add_argument('--data_dir', type=str, default='your_path/captions',
                         help='dir containing the splits data files')
     parser.add_argument('--res_root_dir', type=str, default='results',
                         help='dir to containing all the results')
@@ -263,7 +263,7 @@ def get_args():
 
     # * linguistic encoder config
     parser.add_argument('--glove_path', type=str,
-                        default='your_path/MECD/VAR-main/captions/VAR/min3_word2idx_6B.json',
+                        default='./captions/min3_word2idx_6B.json',
                         help='extracted GloVe vectors')
     parser.add_argument('--glove_version', type=str, default=None, help='extracted GloVe vectors')
     parser.add_argument('--freeze_glove', action='store_true', help='do not train GloVe vectors')
@@ -296,12 +296,12 @@ def get_args():
     parser.add_argument('--hybrid_quant', type=float, default=0.05,
                         help='sentence_similarity_constructive_loss_weight')
     parser.add_argument('--weights_path', type=str,
-                        default='your_path/MECD/VAR-main/pretrain/activitynet_dvc/model_e24.chkpt',
+                        default='the_path_to _pretraining_weight',
                         help='pretrain_weights')
     parser.add_argument('--decay_epoch', type=int, default=4, help='ce_loss weight decay epoch')
     parser.add_argument('--use_decay', type=bool, default=False, help='whether use ce_loss weight decay epoch')
     parser.add_argument('--use_pretrain', type=bool, default=True, help='whether use pretrain or not')
-    parser.add_argument('--json_path', type=str, default='_caption_small3_updated_large.json')
+    parser.add_argument('--json_path', type=str, default='train.json')
     parser.add_argument('--loss_aux_weight2', type=float, default=1e-6, help='mse_loss_weight')
     parser.add_argument('--use_existence', type=bool, default=True,
                         help='whether use EXISTENCE descriptions')
@@ -311,7 +311,7 @@ def get_args():
     parser.add_argument('--multi_chains_b', type=int, default=1, help='multi chains max(1, (num_sen+b) // k)')
     parser.add_argument('--multi_chains_k', type=int, default=3, help='multi chains max(1, (num_sen+b) // k)')
     parser.add_argument('--validation_set', type=str,
-                        default='your_path/MECD/VAR-main/captions/activitynet/val_caption_small3_updated_large.json',
+                        default='./captions/val.json',
                         help='validation_set')
     # * post process and compatibility check
     opt = parser.parse_args()
@@ -335,11 +335,11 @@ def get_args():
 def main():
     import sys
     sys.path.append(os.getcwd())
-    os.environ['CUDA_VISIBLE_DEVICES'] = '4'
+    # os.environ['CUDA_VISIBLE_DEVICES'] = '4'
     opt = get_args()
     init_seed(opt.seed, cuda_deterministic=True)
 
-    train_dataset = VARDataset(
+    train_dataset = MECDDataset(
         dset_name=opt.dset_name,
         data_dir=opt.data_dir,
         max_t_len=opt.max_t_len, max_v_len=opt.max_v_len, max_n_len=opt.max_n_len, max_cot_len=opt.max_cot_len,
@@ -347,7 +347,7 @@ def main():
         multi_chains_k=opt.multi_chains_k, multi_chains_b=opt.multi_chains_b,
         mode='train', K=opt.K, word2idx_path=None if opt.glove_path is None else opt.glove_path
     )
-    val_dataset = VARDataset(
+    val_dataset = MECDDataset(
         dset_name=opt.dset_name,
         data_dir=opt.data_dir,
         max_t_len=opt.max_t_len, max_v_len=opt.max_v_len, max_n_len=opt.max_n_len, max_cot_len=opt.max_cot_len,

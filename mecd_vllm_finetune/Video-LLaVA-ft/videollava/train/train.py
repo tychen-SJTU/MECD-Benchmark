@@ -79,7 +79,7 @@ class DataArguments:
     image_aspect_ratio: str = 'pad'
     # ===================================================================
     data_path: Optional[List[str]] = field(
-        default="your_path/MECD/VAR-main/captions/activitynet/train_caption_small3_updated_large.json",
+        default="./captions/train.json",
         metadata={"help": "Path to the training data."})
     image_folder: Optional[str] = field(default=None)
     video_folder: Optional[str] = field(default="/mnt/sdb/dataset/Activitynet/v1-3/train")
@@ -1058,7 +1058,7 @@ def make_supervised_data_module(tokenizer: transformers.PreTrainedTokenizer,
 def make_mecd_data_module(tokenizer: transformers.PreTrainedTokenizer,
                           data_args) -> Dict:
     """Make dataset and collator for supervised fine-tuning."""
-    causal_inference_file = 'your_path/MECD/VAR-main/captions/activitynet/train_caption_small3_updated_large.json'
+    causal_inference_file = './captions/train.json'
     with open(causal_inference_file, 'r') as f:
         causal_inference_list = json.load(f)
     train_dataset = MECDDataset(causal_inference_list, tokenizer=tokenizer,

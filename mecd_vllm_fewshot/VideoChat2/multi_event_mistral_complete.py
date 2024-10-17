@@ -403,5 +403,5 @@ if __name__ == '__main__':
     # print("Accuracy: {}".format(pos_num / total_num))
     # print("Accuracy(w false): {}".format(pos_num / total_false_num))
     # print("False Number: {}".format(false_num))
-    with open('./video_chat2_mistral_complete2.json', 'w') as f:
+    with open('./video_chat2_mistral_complete.json', 'w') as f:
         json.dump(result, f, indent=4)

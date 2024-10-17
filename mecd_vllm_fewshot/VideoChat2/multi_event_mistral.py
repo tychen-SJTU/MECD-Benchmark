@@ -295,7 +295,7 @@ if __name__ == '__main__':
 
     answer_prompt = None
 
-    causal_inference_file = 'your_path/MECD/VAR-main/captions/complete_graph/val_mecd_complete.json'
+    causal_inference_file = './captions/val.json'
     with open(causal_inference_file, 'r') as f:
         causal_inference_list = json.load(f)
     
@@ -391,5 +391,5 @@ if __name__ == '__main__':
     print("Accuracy: {}".format(pos_num / total_num))
     print("Accuracy(w false): {}".format(pos_num / total_false_num))
     print("False Number: {}".format(false_num))
-    with open('./video_chat2_relation_pred_2_mistral_24frames.json', 'w') as f:
+    with open('./videochat2_in_context_mistral.json', 'w') as f:
         json.dump(result, f, indent=4)

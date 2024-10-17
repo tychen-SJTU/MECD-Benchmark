@@ -379,7 +379,7 @@ if __name__ == '__main__':
         output = output.replace(", ", "")
         ce_sample['relation'] = output
         # output = output.split(',')
-        with open(causal_inference_file, 'w') as f:
+        with open('./video_chat2_mistral_ft.json', 'w') as f:
             json.dump(causal_inference_list, f, indent=4)
     #     try:
     #         # gt_answer = np.array([int(char) for char in gt_answer])

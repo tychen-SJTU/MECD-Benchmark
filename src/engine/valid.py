@@ -1,6 +1,6 @@
 import torch
 
-from src.dataloader import cal_performance, prepare_batch_inputs, VARDataset
+from src.dataloader import cal_performance, prepare_batch_inputs, MECDDataset
 from src.utils import is_distributed, reduce_tensor, get_world_size, dist_log
 
 
@@ -76,7 +76,7 @@ def eval_epoch(model, validation_data, device, opt):
             input_labels = [label[:(len(Logits_list) + 1)] for label in input_labels]
             for pred, gold in zip(pred_scores_list[:num_sen, :, :, :], input_labels[-1]):
                 n_correct += cal_performance(pred, gold)
-                valid_label_mask = gold.ne(VARDataset.IGNORE)
+                valid_label_mask = gold.ne(MECDDataset.IGNORE)
                 n_word += valid_label_mask.sum()
 
             n_word_total += n_word

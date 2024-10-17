@@ -1,6 +1,6 @@
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 import math
 import argparse
 import json
@@ -228,7 +228,7 @@ def run_inference(args):
 
     output_list = []  # List to store the output results
 
-    causal_inference_file = 'your_path/MECD/VAR-main/captions/activitynet/val_caption_small3_updated_large.json'
+    causal_inference_file = './captions/val.json'
     with open(causal_inference_file, 'r') as f:
         causal_inference_list = json.load(f)
 
@@ -319,7 +319,7 @@ def run_inference(args):
     print("Accuracy: {}".format(pos_num / total_num))
     print("Accuracy(w false): {}".format(pos_num / total_false_num))
     print("False Number: {}".format(false_num))
-    with open('your_path/Video-LLaVA/videollava_ft2_relation_pred.json', 'w') as f:
+    with open('your_path/Video-LLaVA/videollava_in_context_relation_pred.json', 'w') as f:
         json.dump(result, f, indent=4)
 
     # with open(answers_file, 'w') as f:
