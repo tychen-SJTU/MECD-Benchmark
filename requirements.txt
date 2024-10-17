@@ -45,7 +45,7 @@ dacite==1.7.0
 datasets==2.14.7
 decorator==4.4.2
 decord==0.6.0
-deepspeed==0.14.0
+deepspeed==0.15.1
 defusedxml==0.7.1
 Deprecated==1.2.14
 diffusers==0.21.4
