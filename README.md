@@ -13,8 +13,9 @@
 ## 📰 News
 [2024.9.26] 🔥🔥🔥 Our MECD is accepted in NeurIPS 2024 as a **Spotlight** Paper!
 
-
 ## 🏠 Overview
+
+<img src="mecd_poster1.png" alt="Image" style="width:100%;">
 
 Video causal reasoning aims to achieve a high-level understanding of video content from a causal perspective. 
 However, current video reasoning tasks are limited in scope, primarily executed in a question-answering paradigm 
