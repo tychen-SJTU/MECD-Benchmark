@@ -8,7 +8,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mecd-unlocking-multi-event-causal-discovery/causal-discovery-in-video-reasoning-on-mecd)](https://paperswithcode.com/sota/causal-discovery-in-video-reasoning-on-mecd?p=mecd-unlocking-multi-event-causal-discovery)
 
-[![hf_space](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/datasets/tychen-sjtu/MECD)
+[![hf_space](https://img.shields.io/badge/🤗-Dataset%20Card-blue.svg)](https://huggingface.co/datasets/tychen-sjtu/MECD)
 
 <img src="mecd_poster1.png" alt="Image" style="width:100%;">
 
@@ -47,7 +47,7 @@ The annotations of testing set:  `captions/test.json`, the causal relation attri
 Full causal relation diagram annotations of the test set can be found at `captions/test_complete.json`, an additional attribute 'all_relation'
 is introduced to conduct complete causal graph reasoning which is evaluated by the 'Average_Structural_Hamming_Distance (Ave SHD)' metric. 
 
-An annotation example ( Annotation display version can be viewed at [HunggingFace](https://huggingface.co/datasets/tychen-sjtu/MECD):
+An annotation example (Annotation display version can also be viewed at [HunggingFace](https://huggingface.co/datasets/tychen-sjtu/MECD)):
 
 <img src="annotation.png" alt="Image" style="width:80%;">
 
