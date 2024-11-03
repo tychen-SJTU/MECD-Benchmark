@@ -135,9 +135,8 @@ The pre-training weight of VGCM is available in [Google Drive](https://drive.goo
 
 ## ✏️ Citation
 ```bash
-@inproceedings{
-  chen2024mecd,
-  title={{MECD}: Unlocking Multi-Event Causal Discovery in Video Reasoning},
+@inproceedings{chen2024mecd,
+  title={MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning},
   author={Chen, Tieyuan and Liu, Huabin and He, Tianyao and Chen, Yihang and Gan, Chaofan and Ma, Xiao and Zhong, Cheng and Zhang, Yang and Wang, Yingxue and Lin, Hui and others},
   booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
   year={2024}
