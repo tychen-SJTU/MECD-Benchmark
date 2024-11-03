@@ -38,12 +38,16 @@ Our MECD dataset includes 806 and 299 videos for training set and testing set, r
 
 <img src="dataset3.png" alt="Image" style="width:95%;">
 
-The annotations of training set: `captions/train.json` 
+The annotations of training set: `captions/train.json`, causal relation attribute 'relation' is introduced.
 
-The annotations of testing set:  `captions/test.json` 
+The annotations of testing set:  `captions/test.json`, causal relation attribute 'relation' is introduced.
 
-Full causal relation diagram annotations can be found at `captions/val_mecd_complete.json`, additional attribute 'all_relation'
-is introduced to conduct complete causal graph reasoning which is evaluated by 'Average_Structural_Hamming_Distance (Ave SHD)' metric. 
+Full causal relation diagram annotations of the test set can be found at `captions/test_complete.json`, an additional attribute 'all_relation'
+is introduced to conduct complete causal graph reasoning which is evaluated by the 'Average_Structural_Hamming_Distance (Ave SHD)' metric. 
+
+An annotation example:
+
+<img src="annotation.png" alt="Image" style="width:80%;">
 
 The videos can be found in ActivityNet official website https://activity-net.org/ according to our provided video ID.
 
