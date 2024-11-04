@@ -228,7 +228,7 @@ def run_inference(args):
 
     output_list = []  # List to store the output results
 
-    causal_inference_file = './captions/val.json'
+    causal_inference_file = './captions/test.json'
     with open(causal_inference_file, 'r') as f:
         causal_inference_list = json.load(f)
 

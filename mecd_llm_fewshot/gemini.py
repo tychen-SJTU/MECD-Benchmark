@@ -33,7 +33,7 @@ model = genai.GenerativeModel('gemini-1.5-pro')
 #     'mime_type': 'image/png',
 #     'data': pathlib.Path('activitynet_image/v_-fMxoShIXiM/0.jpg').read_bytes()
 # }
-json_file_path = './caption/val.json'  # Replace with your file path
+json_file_path = './caption/test.json'  # Replace with your file path
 prompts = {}
 
 prompt_path = 'prompt.txt'

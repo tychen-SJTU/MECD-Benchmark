@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-json_file_path = './caption/val.json' # Replace with your file path
+json_file_path = './caption/test.json' # Replace with your file path
 prompts = {}
 
 prompt_path = 'prompt.txt'

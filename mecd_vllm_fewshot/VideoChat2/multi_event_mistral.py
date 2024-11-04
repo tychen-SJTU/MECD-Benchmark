@@ -295,7 +295,7 @@ if __name__ == '__main__':
 
     answer_prompt = None
 
-    causal_inference_file = './captions/val.json'
+    causal_inference_file = './captions/test.json'
     with open(causal_inference_file, 'r') as f:
         causal_inference_list = json.load(f)
     

@@ -371,20 +371,20 @@ conv_llava_sg_video = Conversation(
     sep2="</s>",
 )
 
-conv_llava_causal_inference = Conversation(
-    system="Task: Each video consists of n events, "
-           "and the text description of each event has been given correspondingly (separated by " ",). "
-           "You need to judge whether the first n-1 events in the video are the cause of the last event, "
-           "the probability of the cause 0(non-causal) or 1(causal) is expressed as the output.",
-
-    roles=("USER", "ASSISTANT"),
-    version="v1",
-    messages=(),
-    offset=0,
-    sep_style=SeparatorStyle.TWO,
-    sep=" ",
-    sep2="</s>",
-)
+# conv_llava_causal_inference = Conversation(
+#     system="Task: Each video consists of n events, "
+#            "and the text description of each event has been given correspondingly (separated by " ",). "
+#            "You need to judge whether the first n-1 events in the video are the cause of the last event, "
+#            "the probability of the cause 0(non-causal) or 1(causal) is expressed as the output.",
+#
+#     roles=("USER", "ASSISTANT"),
+#     version="v1",
+#     messages=(),
+#     offset=0,
+#     sep_style=SeparatorStyle.TWO,
+#     sep=" ",
+#     sep2="</s>",
+# )
 
 conv_llava_video_caption = Conversation(
     system="A chat between a curious human and an artificial intelligence assistant. "
@@ -426,8 +426,12 @@ conv_llava_causal_qa = Conversation(
     version="v1",
 )
 
-conv_llava_causal_inference_complete = Conversation(
+conv_llava_causal_inference = Conversation(
     system='''
+    Task:  Each video consists of n events, 
+           and the text description of each event has been given correspondingly (separated by " ",). 
+           You need to judge whether the first n-1 events in the video are the cause of the last event, 
+           the probability of the cause 0(non-causal) or 1(causal) is expressed as the output.\
     example1: First example: Text description of 6 events:\
            A man wearing a black clothes is sharpening the knife on a stone,\
            The man beside him on blue long sleeves drawing something on the table with his finger,\
@@ -487,7 +491,7 @@ conv_templates = {
     "llava_multi_videos": conv_llava_v1_multi_videos,
 
     "llava_causal_inference": conv_llava_causal_inference,
-    "llava_causal_inference_complete": conv_llava_causal_inference_complete,
+    # "llava_causal_inference_complete": conv_llava_causal_inference_complete,
     "llava_causal_qa": conv_llava_causal_qa,
     "llava_video_caption": conv_llava_video_caption,
     "llava_sg_video": conv_llava_sg_video
