@@ -255,7 +255,7 @@ def get_sinusoid_encoding_table(n_position=784, d_hid=1024, cur_frame=8, ckpt_nu
 
 
 if __name__ == '__main__':
-    os.environ['CUDA_VISIBLE_DEVICES'] = '4'
+    # os.environ['CUDA_VISIBLE_DEVICES'] = '4'
     task = "Task: Each video consists of n events, and the text description of each event has been given correspondingly (separated by " ",). You need to judge whether the first n-1 events in the video are the cause of the last event, the probability of the cause 0(irrelevant) or 1(relevant) is expressed as the output. Here are several example of judging whether the first n-1 events in the video are the cause of the last event:"
     example1 = '''First example: Text description of 6 events:\
            A man wearing a black clothes is sharpening the knife on a stone,\

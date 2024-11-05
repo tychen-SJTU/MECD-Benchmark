@@ -89,11 +89,6 @@ class LlavaLlamaForCausalLM(LlamaForCausalLM, LlavaMetaForCausalLM):
                 labels,
                 images
             )
-        # modified by hotelll
-        # entities_cat = torch.cat([e for batch in entities for e in batch], dim=0)
-        # entities_cat = self.entity_embed(entities_cat)
-        # inputs_embeds[labels == 32000] = entities_cat
-        # labels[labels == 32000] = -100
         
         return super().forward(
             input_ids=input_ids,

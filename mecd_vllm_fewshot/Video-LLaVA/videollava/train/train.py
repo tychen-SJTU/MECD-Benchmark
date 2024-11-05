@@ -542,7 +542,6 @@ def preprocess_v1(
     )
 
 
-# modified by hotelll
 def preprocess_sg_video(
         sources,
         tokenizer: transformers.PreTrainedTokenizer,
@@ -917,8 +916,6 @@ class LazySupervisedDataset(Dataset):
             print(f'Error with {e}')
             return self.__getitem__(random.randint(0, self.__len__() - 1))
 
-
-# modified by hotelll
 class StructuredVideoDataset(Dataset):
     """Dataset for supervised fine-tuning."""
 
@@ -1215,7 +1212,6 @@ def train():
             padding_side="right",
             use_fast=False,
         )
-    # modified by hotelll
     # tokenizer.add_special_tokens({'additional_special_tokens': ['<entity>']})
     # model.resize_token_embeddings(len(tokenizer))
     if model_args.version == "v0":
