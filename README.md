@@ -102,7 +102,7 @@ and `mecd_vllm_fewshot/Video-LLaVA/videollava/conversation.py`.
 Please follow the command to evaluate the In-Context causal discovery ability of Video-LLaVA:
 ```bash
 cd mecd_vllm_fewshot/Video-LLaVA
-python videollava/eval/video/run_inference_causal_inference_complete.py
+python videollava/eval/video/run_inference_causal_inference.py
 ```
 #### 🦜Videochat2
 Similarly, please follow the command to evaluate the In-Context causal discovery ability of Videochat2:
