@@ -53,6 +53,12 @@ An annotation example (Annotation display version can also be viewed at [Hunggin
 
 The videos can be found in ActivityNet official website https://activity-net.org/ according to our provided video ID.
 
+For the latest download issues related to ActivityNet, you can refer to the answer in: [Official Repository Issue](https://github.com/activitynet/ActivityNet/issues/103). 
+
+The latest download request form is available in: [Request Form](https://docs.google.com/forms/d/e/1FAIpQLSdxhNVeeSCwB2USAfeNWCaI9saVT6i2hpiiizVYfa3MsTyamg/viewform).
+
+The link to the 8-frame sampled results for all videos in MECD is available in: [Google Drive](https://drive.google.com/file/d/1h10MEKN_p1iDEhWZ8kbLraV38_1SeHvG/view?usp=drive_link).
+
 The pretraining feature extracted by ResNet200 can be got by following the command below (details can be found in [VAR](https://github.com/leonnnop/VAR)) :
 ```bash
 python feature_kit/extract_feature.py
