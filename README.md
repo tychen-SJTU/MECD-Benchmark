@@ -129,6 +129,17 @@ cd mecd_llm_fewshot
 python gemini.py
 ```
 
+##  Video Question Answering Enhancement
+Additional causal relations facilitates VLLM with stronger VideoQA ability.
+527 examples overlap between our MECD dataset and the ActivityNet-QA dataset: `question_answering/QA.json`.
+No additional training process is needed.
+
+The example of facilitating VideoChat2 QA process:
+```bash
+cd mecd_vllm_fewshot/VideoChat2-ft
+python run_qa_causal_mistral.py
+```
+
 ## 🛠️ Requirements and Installation
 First, you will need to set up the environment and extract pretraining weight of each video.
 We offer an environment suitable for both VGCM and all VLLMs:
@@ -141,10 +152,12 @@ The pre-training weight of VGCM is available in [Google Drive](https://drive.goo
 
 ## ✏️ Citation
 ```bash
-@inproceedings{chen2024mecd,
-  title={{MECD}: Unlocking Multi-Event Causal Discovery in Video Reasoning},
-  author={Chen, Tieyuan and Liu, Huabin and He, Tianyao and Chen, Yihang and Gan, Chaofan and Ma, Xiao and Zhong, Cheng and Zhang, Yang and Wang, Yingxue and Lin, Hui and others},
-  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+@article{chen2024mecd,
+  title={MECD: Unlocking multi-event causal discovery in video reasoning},
+  author={Chen, Tieyuan and Liu, Huabin and He, Tianyao and Chen, Yihang and Ma, Xiao and Zhong, Cheng and Zhang, Yang and Wang, Yingxue and Lin, Hui and Lin, Weiyao and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={92554--92580},
   year={2024}
 }
 ```
