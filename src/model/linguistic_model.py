@@ -10,7 +10,6 @@ import torch.utils.checkpoint as cp
 import torch.nn.functional as F
 # from easydict import EasyDict as edict
 import numpy as np
-from encoder.Clip_encoder import clip
 from .modules import BertLayerNorm, PositionEncoding, BertAttention, BertIntermediate, BertOutput, BertSelfAttentionSen
 from .utils.helpers import make_pad_shifted_mask
 
