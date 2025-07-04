@@ -67,6 +67,7 @@ python feature_kit/extract_feature.py
 ```
 
 2025.07.05 Update: The newly introduced training data in MECD+ can be found in `captions/train_mecd_plus.json`, the corresponding video_id can be found in [Eventbench](https://huggingface.co/datasets/RUCAIBox/Event-Bench).
+You can download the Eventbench dataset, where all the videos we introduced can be found with their corresponding original video sources.
 MECD+ paper (Under IEEE TPAMI 2nd Round Review) can be found in: [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227).
 
 ## 🗝️ Training & Validating 
