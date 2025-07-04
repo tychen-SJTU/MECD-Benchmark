@@ -13,9 +13,9 @@
 <img src="mecd_poster1.png" alt="Image" style="width:100%;">
 
 ## 📰 News
-[2024.9.26] 🔥🔥🔥 Our MECD is accepted in NeurIPS 2024 as a **Spotlight** Paper!
+[2024.09.26] 🔥🔥🔥 Our MECD is accepted in NeurIPS 2024 as a **Spotlight** Paper!
 
-[2025.7.5] MECD+ dataset public available.
+[2025.07.05] MECD+ dataset public available.
 
 ## 🏠 Overview
 
