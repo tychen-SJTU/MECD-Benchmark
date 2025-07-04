@@ -14,6 +14,7 @@
 
 ## 📰 News
 [2024.9.26] 🔥🔥🔥 Our MECD is accepted in NeurIPS 2024 as a **Spotlight** Paper!
+
 [2025.7.5] MECD+ dataset public available.
 
 ## 🏠 Overview
@@ -43,12 +44,6 @@ Our MECD dataset includes 806 and 299 videos for training set and testing set, r
 
 The annotations of training set: `captions/train.json`, the causal relation attribute 'relation' is introduced.
 
-(The newly introduced training data in MECD+ can be found in `captions/train_mecd_plus.json`.)
-
-The corresponding video_id can be found in [Eventbench](https://huggingface.co/datasets/RUCAIBox/Event-Bench).
-
-MECD+ paper (Under IEEE TPAMI 2nd Review) can be found in: [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227).
-
 The annotations of testing set:  `captions/test.json`, the causal relation attribute 'relation' is introduced.
 
 Full causal relation diagram annotations of the test set can be found at `captions/test_complete.json`, an additional attribute 'all_relation'
@@ -70,6 +65,10 @@ The pretraining feature extracted by ResNet200 can be got by following the comma
 ```bash
 python feature_kit/extract_feature.py
 ```
+
+2025.07.05 Update: The newly introduced training data in MECD+ can be found in `captions/train_mecd_plus.json`, the corresponding video_id can be found in [Eventbench](https://huggingface.co/datasets/RUCAIBox/Event-Bench).
+MECD+ paper (Under IEEE TPAMI 2nd Round Review) can be found in: [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227).
+
 ## 🗝️ Training & Validating 
 For training and our validating VGCM(Video Granger Causality Model), please follow the command below:
 ```bash 
