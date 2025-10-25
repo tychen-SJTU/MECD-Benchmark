@@ -17,6 +17,8 @@
 
 [2025.07.05] MECD+ dataset public available.
 
+[2025.10.25] 🔥🔥🔥 Our MECD+ is accepted in IEEE TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence) !
+
 ## 🏠 Overview
 
 <img src="main_mecd.png" alt="Image" style="width:95%;">
@@ -171,7 +173,7 @@ The pre-training weight of VGCM is available in [Google Drive](https://drive.goo
 @article{chen2025mecd+,
   title={MECD+: Unlocking Event-Level Causal Graph Discovery for Video Reasoning},
   author={Chen, Tieyuan and Liu, Huabin and Wang, Yi and Chen, Yihang and He, Tianyao and Gan, Chaofan and He, Huanyu and Lin, Weiyao},
-  journal={arXiv preprint arXiv:2501.07227},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
   year={2025}
 }
 ```
