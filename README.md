@@ -4,7 +4,7 @@
 
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
 
-[![arXiv](https://img.shields.io/badge/Arxiv-2409.17647-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.17647) <br>
+[![arXiv](https://img.shields.io/badge/Arxiv-2409.17647-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.17647)
 [![hf_space](https://img.shields.io/badge/🤗-Dataset%20Card-blue.svg)](https://huggingface.co/datasets/tychen-sjtu/MECD)
 [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227)
 
