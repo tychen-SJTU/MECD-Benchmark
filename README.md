@@ -63,6 +63,9 @@ The latest download request form is available in: [Request Form](https://docs.go
 
 The link to the 8-frame sampled results for all videos in MECD is available in: [Google Drive](https://drive.google.com/file/d/1h10MEKN_p1iDEhWZ8kbLraV38_1SeHvG/view?usp=drive_link).
 
+Moreover, if you miss some videos from current downloaded ActivityNet, please send the corresponding missing Video_ID to tieyuanchen@sjtu.edu.cn
+, and we will help you as much as possible.
+
 The pretraining feature extracted by ResNet200 can be got by following the command below (details can be found in [VAR](https://github.com/leonnnop/VAR)) :
 ```bash
 python feature_kit/extract_feature.py
