@@ -13,6 +13,8 @@
 ## 📰 News
 [2024.09.26] 🔥🔥🔥 Our MECD is accepted in NeurIPS 2024 as a **Spotlight** Paper!
 
+[2024.09.26] MECD dataset public available.
+
 [2025.07.05] MECD+ dataset public available.
 
 [2025.10.25] 🔥🔥🔥 Our MECD+ is accepted in IEEE TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence) !
