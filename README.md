@@ -1,6 +1,6 @@
 <h2 align="center"> <a href="https://arxiv.org/abs/2409.17647">MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning</a></h2>
 
-<h5 align="center"> NeurIPS 2024 (Spotlight)  </h2>
+<h5 align="center"> NeurIPS 2024 (Spotlight) + IEEE TPAMI 2025 </h2>
 
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
 
@@ -71,9 +71,10 @@ The pretraining feature extracted by ResNet200 can be got by following the comma
 python feature_kit/extract_feature.py
 ```
 
-[2025.07.05] Update: The newly introduced training data in MECD+ can be found in `captions/train_mecd_plus.json`, the corresponding video_id can be found in [Eventbench](https://huggingface.co/datasets/RUCAIBox/Event-Bench).
+[2025.07.05] Update: For MECD+: Unlocking Event-Level Causal Graph Discovery for Video Reasoning. (Accepted by IEEE TPAMI): [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227)
+
+The newly introduced training data in MECD+ can be found in `captions/train_mecd_plus.json`, the corresponding video_id can be found in [Eventbench](https://huggingface.co/datasets/RUCAIBox/Event-Bench).
 You can download the Eventbench dataset, where all the videos we introduced can be found with their corresponding original video sources.
-MECD+ paper (Accepted by IEEE TPAMI) can be found in: [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227).
 
 ## 🗝️ Training & Validating 
 For training and our validating VGCM(Video Granger Causality Model), please follow the command below:
