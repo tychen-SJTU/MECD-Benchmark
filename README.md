@@ -6,9 +6,9 @@
 
 [![arXiv](https://img.shields.io/badge/Arxiv-2409.17647-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.17647) <br>
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mecd-unlocking-multi-event-causal-discovery/causal-discovery-in-video-reasoning-on-mecd)](https://paperswithcode.com/sota/causal-discovery-in-video-reasoning-on-mecd?p=mecd-unlocking-multi-event-causal-discovery)
-
 [![hf_space](https://img.shields.io/badge/🤗-Dataset%20Card-blue.svg)](https://huggingface.co/datasets/tychen-sjtu/MECD)
+
+Extension: [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227)
 
 <img src="mecd_poster1.png" alt="Image" style="width:100%;">
 
@@ -70,7 +70,7 @@ python feature_kit/extract_feature.py
 
 [2025.07.05] Update: The newly introduced training data in MECD+ can be found in `captions/train_mecd_plus.json`, the corresponding video_id can be found in [Eventbench](https://huggingface.co/datasets/RUCAIBox/Event-Bench).
 You can download the Eventbench dataset, where all the videos we introduced can be found with their corresponding original video sources.
-MECD+ paper (Under IEEE TPAMI 2nd Round Review) can be found in: [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227).
+MECD+ paper (Accepted by IEEE TPAMI) can be found in: [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227).
 
 ## 🗝️ Training & Validating 
 For training and our validating VGCM(Video Granger Causality Model), please follow the command below:
