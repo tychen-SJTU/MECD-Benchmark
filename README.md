@@ -8,7 +8,7 @@
 
 [![hf_space](https://img.shields.io/badge/🤗-Dataset%20Card-blue.svg)](https://huggingface.co/datasets/tychen-sjtu/MECD)
 
-Extension: [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227)
+[![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227)
 
 <img src="mecd_poster1.png" alt="Image" style="width:100%;">
 
