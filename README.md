@@ -19,6 +19,8 @@
 
 [2025.10.25] 🔥🔥🔥 Our MECD+ is accepted in IEEE TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence) !
 
+[2026.02.11] Released the full 8-frame uniformly sampled video frames for the MECD dataset.
+
 ## 🏠 Overview
 
 <img src="main_mecd.png" alt="Image" style="width:95%;">
@@ -192,11 +194,13 @@ The pre-training weight of VGCM is available in [Google Drive](https://drive.goo
   year={2024}
 }
 
-@article{chen2025mecd+,
-  title={MECD+: Unlocking Event-Level Causal Graph Discovery for Video Reasoning},
+@article{chen2026mecd,
+  title={{MECD+}: Unlocking Event-Level Causal Graph Discovery for Video Reasoning},
   author={Chen, Tieyuan and Liu, Huabin and Wang, Yi and Chen, Yihang and He, Tianyao and Gan, Chaofan and He, Huanyu and Lin, Weiyao},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
-  year={2025}
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2026},
+  volume={48},
+  pages={2628-2645},
 }
 ```
 ### 👍 Acknowledgement
