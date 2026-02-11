@@ -44,18 +44,24 @@ Our MECD dataset includes 806 and 299 videos for training set and testing set, r
 
 <img src="dataset3.png" alt="Image" style="width:95%;">
 
-### 1. Annotation 
+### 1. Annotation
 
-The annotations of training set: `captions/train.json`, the causal relation attribute 'relation' is introduced.
+#### 📄 Annotation Files
+We provide JSON annotations for training, testing, and complete causal reasoning:
 
-The annotations of testing set:  `captions/test.json`, the causal relation attribute 'relation' is introduced.
+- **Training Set:** `captions/train.json`
+  - Includes the causal attribute: `relation`.
+- **Test Set:** `captions/test.json`
+  - Includes the causal attribute: `relation`.
+- **Full Causal Graph (Test):** `captions/test_complete.json`
+  - Introduces the additional attribute `all_relation`.
+  - Used for complete causal graph reasoning, evaluated by the **Average Structural Hamming Distance (Ave SHD)** metric.
 
-Full causal relation diagram annotations of the test set can be found at `captions/test_complete.json`, an additional attribute 'all_relation'
-is introduced to conduct complete causal graph reasoning which is evaluated by the 'Average_Structural_Hamming_Distance (Ave SHD)' metric. 
+#### 🔍 Visualization
+You can preview the dataset and annotation display on [Hugging Face](https://huggingface.co/datasets/tychen-sjtu/MECD).
 
-An annotation example (Annotation display version can also be viewed at [HunggingFace](https://huggingface.co/datasets/tychen-sjtu/MECD)):
-
-<img src="annotation.png" alt="Image" style="width:80%;">
+**Annotation Example:**
+<img src="annotation.png" alt="Annotation Example" style="width:80%;">
 
 ### 2. Video Data & Frames
 
@@ -79,11 +85,15 @@ The pretraining feature extracted by ResNet200 can be got by following the comma
 python feature_kit/extract_feature.py
 ```
 
-[2025.07.05] Update: For MECD+: Unlocking Event-Level Causal Graph Discovery for Video Reasoning. (Accepted by IEEE TPAMI): [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227)
+### 3. Update
 
-The newly introduced training data in MECD+ can be found in `captions/train_mecd_plus.json`, the corresponding video_id can be found in [Eventbench](https://huggingface.co/datasets/RUCAIBox/Event-Bench).
-You can download the Eventbench dataset, where all the videos we introduced can be found with their corresponding original video sources.
+- **[2025.07.05]** 🔥 **Update:** Our extension work **"MECD+: Unlocking Event-Level Causal Graph Discovery for Video Reasoning"** has been accepted by **IEEE TPAMI**! 
+  [![arXiv](https://img.shields.io/badge/Arxiv-2501.07227-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.07227)
 
+- **[2025.07.05]** ➕ **MECD+ Data Release:** 
+  - The newly introduced training data is available in `captions/train_mecd_plus.json`.
+  - Corresponding Video IDs and original sources can be found in the [Eventbench Dataset](https://huggingface.co/datasets/RUCAIBox/Event-Bench).
+  
 ## 🗝️ Training & Validating 
 For training and our validating VGCM(Video Granger Causality Model), please follow the command below:
 ```bash 
