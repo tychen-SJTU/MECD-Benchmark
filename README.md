@@ -44,6 +44,8 @@ Our MECD dataset includes 806 and 299 videos for training set and testing set, r
 
 <img src="dataset3.png" alt="Image" style="width:95%;">
 
+### 1. Annotation 
+
 The annotations of training set: `captions/train.json`, the causal relation attribute 'relation' is introduced.
 
 The annotations of testing set:  `captions/test.json`, the causal relation attribute 'relation' is introduced.
@@ -55,16 +57,22 @@ An annotation example (Annotation display version can also be viewed at [Hunggin
 
 <img src="annotation.png" alt="Image" style="width:80%;">
 
-The videos can be found in ActivityNet official website https://activity-net.org/ according to our provided video ID.
+### 2. Video Data & Frames
 
-For the latest download issues related to ActivityNet, you can refer to the answer in: [Official Repository Issue](https://github.com/activitynet/ActivityNet/issues/103). 
+#### 📥 Pre-extracted Frames (MECD)
+For convenience, we provide **8-frame sampled results** for all videos in the MECD dataset. You can download them directly from Google Drive:
+- **Training Set:** [Download Link](https://drive.google.com/file/d/1x-l8Ox9qTiE_ZNSMMnsLoAtnlotllImP/view?usp=drive_link)
+- **Test Set:** [Download Link](https://drive.google.com/file/d/1h10MEKN_p1iDEhWZ8kbLraV38_1SeHvG/view?usp=drive_link)
 
-The latest download request form is available in: [Request Form](https://docs.google.com/forms/d/e/1FAIpQLSdxhNVeeSCwB2USAfeNWCaI9saVT6i2hpiiizVYfa3MsTyamg/viewform).
+#### 🎬 Raw Videos (ActivityNet)
+The raw videos correspond to the official ActivityNet dataset. Please refer to the [ActivityNet Official Website](https://activity-net.org/) and use the provided Video IDs for retrieval.
 
-The link to the 8-frame sampled results for all videos in MECD is available in: [Google Drive](https://drive.google.com/file/d/1h10MEKN_p1iDEhWZ8kbLraV38_1SeHvG/view?usp=drive_link).
+**Download Resources:**
+- 📝 **Request Form:** [Latest Download Request Form](https://docs.google.com/forms/d/e/1FAIpQLSdxhNVeeSCwB2USAfeNWCaI9saVT6i2hpiiizVYfa3MsTyamg/viewform)
+- 🐛 **Troubleshooting:** For download issues, refer to [ActivityNet Issue #103](https://github.com/activitynet/ActivityNet/issues/103).
 
-Moreover, if you miss some videos from current downloaded ActivityNet, please send the corresponding missing Video_ID to tieyuanchen@sjtu.edu.cn
-, and we will help you as much as possible.
+> **Missing Data Support:**  
+> If you encounter missing videos in your current ActivityNet download, please email the specific `Video_ID` to [tieyuanchen@sjtu.edu.cn](mailto:tieyuanchen@sjtu.edu.cn), and we will assist you.
 
 The pretraining feature extracted by ResNet200 can be got by following the command below (details can be found in [VAR](https://github.com/leonnnop/VAR)) :
 ```bash
