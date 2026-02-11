@@ -198,9 +198,9 @@ The pre-training weight of VGCM is available in [Google Drive](https://drive.goo
   title={{MECD+}: Unlocking Event-Level Causal Graph Discovery for Video Reasoning},
   author={Chen, Tieyuan and Liu, Huabin and Wang, Yi and Chen, Yihang and He, Tianyao and Gan, Chaofan and He, Huanyu and Lin, Weiyao},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  year={2026},
   volume={48},
   pages={2628-2645},
+  year={2026},
 }
 ```
 ### 👍 Acknowledgement
