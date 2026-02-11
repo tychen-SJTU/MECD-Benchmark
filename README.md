@@ -63,6 +63,7 @@ We provide JSON annotations for training, testing, and complete causal reasoning
 You can preview the dataset and annotation display on [Hugging Face](https://huggingface.co/datasets/tychen-sjtu/MECD).
 
 **Annotation Example:**
+
 <img src="annotation.png" alt="Annotation Example" style="width:80%;">
 
 ### 2. Video Data & Frames
