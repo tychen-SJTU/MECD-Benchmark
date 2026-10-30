@@ -77,11 +77,13 @@ For convenience, we provide **8-frame sampled results** for all videos in the ME
 The raw videos correspond to the official ActivityNet dataset. Please refer to the [ActivityNet Official Website](https://activity-net.org/) and use the provided Video IDs for retrieval.
 
 **Download Resources:**
-- 📝 **Request Form:** [Latest Download Request Form](https://docs.google.com/forms/d/e/1FAIpQLSdxhNVeeSCwB2USAfeNWCaI9saVT6i2hpiiizVYfa3MsTyamg/viewform)
-- 🐛 **Troubleshooting:** For download issues, refer to [ActivityNet Issue #103](https://github.com/activitynet/ActivityNet/issues/103).
+- 📝 **Official Channel (Primary):** [Latest Download Request Form](https://docs.google.com/forms/d/e/1FAIpQLSdxhNVeeSCwB2USAfeNWCaI9saVT6i2hpiiizVYfa3MsTyamg/viewform) — We recommend prioritizing the official form to get temporary access to the complete Google/Baidu Drive backups.
+- 🤗 **Hugging Face Mirror (Most Convenient):** [YimuWang/ActivityNet](https://huggingface.co/datasets/YimuWang/ActivityNet) — Recommended for direct and hassle-free downloads. It provides full archives, split packages, and missing video patches without requiring form approval.
+- 🐛 **Troubleshooting:** For known download issues, refer to [ActivityNet Issue #103](https://github.com/activitynet/ActivityNet/issues/103).
 
-> **Missing Data Support:**  
-> If you encounter missing videos in your current ActivityNet download, please email the specific `Video_ID` to [tieyuanchen@sjtu.edu.cn](mailto:tieyuanchen@sjtu.edu.cn), and we will assist you.
+> **Missing Data Support (Last Resort):**  
+> If you still cannot resolve the missing video issues through the links above as a last resort, feel free to email the specific `Video_ID`s to [tieyuanchen@sjtu.edu.cn](mailto:tieyuanchen@sjtu.edu.cn).  
+> *Note: Replies might be delayed due to busy schedules—apologies in advance for any inconvenience.*
 
 The pretraining feature extracted by ResNet200 can be got by following the command below (details can be found in [VAR](https://github.com/leonnnop/VAR)) :
 ```bash
