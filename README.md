@@ -77,14 +77,18 @@ For convenience, we provide **8-frame sampled results** for all videos in the ME
 The raw videos correspond to the official ActivityNet dataset. Please refer to the [ActivityNet Official Website](https://activity-net.org/) and use the provided Video IDs for retrieval.
 
 **Download Resources:**
-- 📝 **Official Channel (Primary):** [Latest Download Request Form](https://docs.google.com/forms/d/e/1FAIpQLSdxhNVeeSCwB2USAfeNWCaI9saVT6i2hpiiizVYfa3MsTyamg/viewform) — We recommend prioritizing the official form to get temporary access to the complete Google/Baidu Drive backups.
-- 🤗 **Hugging Face Mirror (Most Convenient):** [YimuWang/ActivityNet](https://huggingface.co/datasets/YimuWang/ActivityNet) — Recommended for direct and hassle-free downloads. It provides full archives, split packages, and missing video patches without requiring form approval.
-- 🐛 **Troubleshooting:** For known download issues, refer to [ActivityNet Issue #103](https://github.com/activitynet/ActivityNet/issues/103).
+- 📝 **Official Channel (Primary):** [Latest Download Request Form](https://docs.google.com/forms/d/e/1FAIpQLSdxhNVeeSCwB2USAfeNWCaI9saVT6i2hpiiizVYfa3MsTyamg/viewform) — Priority official channel to request 7-day temporary access to official Google/Baidu Drive mirrors.
+- 🤗 **Hugging Face Mirror (Most Convenient):** [YimuWang/ActivityNet](https://huggingface.co/datasets/YimuWang/ActivityNet) — Recommended for direct and hassle-free downloads. It provides full archives, split packages, and missing video patches without form approval.
+- 🐛 **Troubleshooting & Known Issues:**
+  - **YouTube Crawler Failure ([Issue #103](https://github.com/activitynet/ActivityNet/issues/103)):** Scraping directly via `youtube-dl` often fails due to deleted/private videos and YouTube anti-bot rate limits (HTTP 403/429). We strongly suggest using pre-packaged mirrors (Hugging Face or official drives) instead of scraping from scratch.
+  - **Google Drive Quota Limit ([Issue #57](https://github.com/activitynet/ActivityNet/issues/57)):** If official Google Drive links show *"Download quota exceeded"*, make a shortcut/copy of the folder to your own Google Drive before downloading.
+  - **Version Combination (v1.2 vs. v1.3):** Note that ActivityNet v1.3 is an incremental extension built on top of v1.2. To obtain the full v1.3 dataset, you must download both `v1-2` and `v1-3` archives and extract them into the same root folder.
+  - **Download Interruption:** Due to large file sizes (>50GB), avoid direct browser downloads. Use CLI tools supporting breakpoint resume (e.g., `huggingface-cli`, `aria2`, or `wget -c`).
+  - *For other issues, please consult the [ActivityNet Issues Tracker](https://github.com/activitynet/ActivityNet/issues).*
 
 > **Missing Data Support (Last Resort):**  
-> If you still cannot resolve the missing video issues through the links above as a last resort, feel free to email the specific `Video_ID`s to [tieyuanchen@sjtu.edu.cn](mailto:tieyuanchen@sjtu.edu.cn).  
+> If you still cannot resolve missing video issues through the channels above as a last resort, feel free to email the specific `Video_ID`s to [tieyuanchen@sjtu.edu.cn](mailto:tieyuanchen@sjtu.edu.cn).  
 > *Note: Replies might be delayed due to busy schedules—apologies in advance for any inconvenience.*
-
 The pretraining feature extracted by ResNet200 can be got by following the command below (details can be found in [VAR](https://github.com/leonnnop/VAR)) :
 ```bash
 python feature_kit/extract_feature.py
